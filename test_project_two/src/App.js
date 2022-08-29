@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, Fragment} from 'react';
 
 import UserInput from './components/UserInput/UserInput';
 import UserList from './components/UserList/UserList';
-
+import Wrapper from './components/Helpers/Wrapper';
 const USER_DETAILS = [];
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
   };
 
   return (
-    <div>
+    <Fragment>
       <section>
       <UserInput 
         onAddUser={addUserHandler}
@@ -39,7 +39,7 @@ function App() {
       <section>
         {content}
       </section>
-    </div>
+    </Fragment>
   );
 }
 

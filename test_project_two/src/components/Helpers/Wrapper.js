@@ -1,7 +1,7 @@
 
 const Wrapper = (props) => {
     return (
-        <div></div>
+        <div>{props.children}</div>
     );
 }
 
