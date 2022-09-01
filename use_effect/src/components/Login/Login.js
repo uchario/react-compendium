@@ -113,7 +113,11 @@ const Login = (props) => {
           />
         </div>
         <div className={classes.actions}>
-          <Button type="submit" className={classes.btn} disabled={!formIsValid}>
+          <Button 
+            type="submit" 
+            className={classes.btn} 
+            disabled={!formIsValid}
+          >
             Login
           </Button>
         </div>
