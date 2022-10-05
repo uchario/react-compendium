@@ -1,6 +1,8 @@
+import { forwardRef } from 'react';
+
 import classes from './Input.module.css';
 
-const Input = (props) => {
+const Input = forwardRef((props, ref) => {
     return (
         <div className={`${classes.input}`}>
             <label 
@@ -8,9 +10,9 @@ const Input = (props) => {
             >
                 {props.label}
             </label>
-            <input id={props.input.id} {...props.input}/>
+            <input ref={ref} {...props.input}/>
         </div>
     );
-};
+});
 
 export default Input;

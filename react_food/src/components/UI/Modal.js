@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import ReactDom, { createPortal } from 'react-dom';
+import { createPortal } from 'react-dom';
 
 import classes from './Modal.module.css';
 

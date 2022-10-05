@@ -31,6 +31,7 @@ const DUMMY_MEALS = [
   ];
 
 const AvailableMeals = (props) => {
+  // props from Meals
     return (
         <section className={`${classes.meals}`}>
             <Card>
